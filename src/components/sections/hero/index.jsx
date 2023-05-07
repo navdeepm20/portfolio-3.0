@@ -12,7 +12,7 @@ import Badge from "../../badges";
 
 function index() {
   return (
-    <div className="hero-section grid grid-cols-3 items-center">
+    <div className="hero-section grid grid-cols-3 items-center justify-center">
       <div className="hero-section__personal-info">
         <Badge icon={"👋"} text="Greetings!" tailwindStyles="mb-[2.4rem]" />
         <p className="text-white text-[5.2rem] leading-[6.1rem] font-extrabold mb-[1.6rem]">
@@ -27,10 +27,10 @@ function index() {
           <Image src={LinkedInLogo} alt="llinkedIn_logo" />
         </div>
       </div>
-      <div className="hero-section__avatar">
+      <div className="hero-section__avatar ">
         <Image src={Avatar} alt="avatar" />
       </div>
-      <div className="hero-section__download-cv">
+      <div className="hero-section__download-cv justify-self-center">
         <Btn title="Download CV" endIcon={DownloadIcon} />
       </div>
     </div>
