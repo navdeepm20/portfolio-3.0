@@ -1,13 +1,19 @@
-import { Inter } from "next/font/google";
-import Navbar from "./components/navbar";
+import { Raleway } from "next/font/google";
+//components
+import Navbar from "../components/navbar";
+//sections
+import HeroSection from "../components/sections/hero";
 
-const inter = Inter({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"] });
 //components
 
 export default function Home() {
   return (
-    <main>
+    <main className="px-[14rem]" style={raleway.style}>
+      {/* nav section */}
       <Navbar />
+      {/* hero section */}
+      <HeroSection />
     </main>
   );
 }
