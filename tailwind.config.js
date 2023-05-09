@@ -16,6 +16,7 @@ module.exports = {
     colors: {
       "primary-text": "#7b4ae2",
       "primary-bg-extraLight": "rgba(123, 74, 226, 0.1)",
+      "primary-bg-extraLight2": "rgba(123, 74, 226, 0.2)",
       "primary-bg-light": "rgba(123, 74, 226, 0.5)",
       customGrey: "rgba(255, 255, 255, 0.5)",
     },
