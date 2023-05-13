@@ -1,15 +1,12 @@
 function index({ designations, ...props }) {
   return (
     <div
-      className="rounded-[1.6rem] flex py-[2.7rem] px-[2rem] bg-primary-bg-extraLight w-full
+      className="rounded-[1.6rem] flex justify-between py-[2.7rem] px-[2rem] bg-primary-bg-extraLight w-full
 	"
     >
       {designations?.map((position, index) => {
         return (
-          <div
-            className="[:not(:last-child)]:p-[11.979ren] mr-[11.979rem]"
-            key={index}
-          >
+          <div className=" " key={index}>
             <p className="text-center text-primary-text text-[1.6rem] leading-[1.9rem] font-normal">
               {position?.title}
             </p>

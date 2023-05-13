@@ -1,16 +1,15 @@
 //next js
 import Image from "next/image";
-
 //assets
-import GithubLogo from "#/social_media-icons/github.svg";
-import LinkedInLogo from "#/social_media-icons/linkedin.svg";
-import Avatar from "#/avatar/AvatarAndIcons.svg";
-import DownloadIcon from "#/icons/ArrowLineDown.svg";
+import GithubLogo from "@assets/social_media-icons/github.svg";
+import LinkedInLogo from "@assets/social_media-icons/linkedin.svg";
+import Avatar from "@assets/avatar/AvatarAndIcons.svg";
+import DownloadIcon from "@assets/icons/ArrowLineDown.svg";
 //components
 import Btn from "../../button";
 import Badge from "../../badges";
 
-function index() {
+function index({ ...props }) {
   return (
     <div className="hero-section grid grid-cols-3 items-center justify-center pb-[19.1rem]">
       <div className="hero-section__personal-info">

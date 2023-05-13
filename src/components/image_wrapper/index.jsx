@@ -6,7 +6,7 @@ import Image from "next/image";
 
 
 
-function index({ icon, alt, styles, tailwindStyles, ...props }) {
+function index({ icon, alt, styles, tailwindStyles, noPointer,...props }) {
 
   return (
     <Image
@@ -14,9 +14,7 @@ function index({ icon, alt, styles, tailwindStyles, ...props }) {
       alt={alt}
       className={...tailwindStyles}
       style={{ ...styles }}
-      css={{ "&:hover path":{
-      stroke:'red !important'
-      } }}
+      css={{ cursor:noPointer ? 'inital':'pointer' }}
     />
   );
 }

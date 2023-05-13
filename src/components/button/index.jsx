@@ -1,5 +1,5 @@
 //components
-import Icon from "@components/icon";
+import Icon from "@/components/image_wrapper";
 
 function index({ variant, title, startIcon, endIcon, ...props }) {
   return (

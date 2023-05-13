@@ -4,7 +4,9 @@ import Navbar from "../components/navbar";
 import Divider from "../components/divider";
 //sections
 import HeroSection from "../components/sections/hero";
-import DeisgnationSection from "../components/sections/designation";
+import DeisgnationSection from "@components/sections/designation";
+import BioSection from "@components/sections/bio";
+import PortfolioSection from "@components/sections/portfolio";
 
 const raleway = Raleway({ subsets: ["latin"] });
 //components
@@ -19,6 +21,8 @@ export default function Home() {
       <Divider />
       <DeisgnationSection />
       <Divider />
+      <BioSection />
+      <PortfolioSection />
     </main>
   );
 }
