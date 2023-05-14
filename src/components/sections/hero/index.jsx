@@ -23,7 +23,7 @@ function index({ ...props }) {
         </p>
         <div className="hero-section__personal-info-social-icons flex gap-[1.5rem] ">
           <Image src={GithubLogo} alt="github_logo" />
-          <Image src={LinkedInLogo} alt="llinkedIn_logo" />
+          <Image src={LinkedInLogo} alt="linkedIn_logo" />
         </div>
       </div>
       <div className="hero-section__avatar ">
