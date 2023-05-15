@@ -16,7 +16,7 @@ function index({ ...props }) {
     <span>Skills &middot; Experiences</span>
   );
   return (
-    <div className="skills-section flex flex-col">
+    <div className="skills-section flex flex-col mb-[14rem]">
       <div className="flex flex-col items-center">
         <Badge
           icon="👨‍💻"
@@ -31,7 +31,7 @@ function index({ ...props }) {
             <p className="text-[2.4rem] leading-[2.8rem] text-customGrey mb-[4rem] text-center">
               Tech's I use everyday
             </p>
-            <div className="skills-section__primary-skills-image-container flex gap-x-[3.2rem]">
+            <div className="skills-section__primary-skills-image-container flex flex-wrap gap-y-[2.8rem] gap-x-[3.2rem]">
               <ImageWrapper icon={HtmlIcon} />
               <ImageWrapper icon={CssIcon} />
               <ImageWrapper icon={JsIcon} />
@@ -46,7 +46,7 @@ function index({ ...props }) {
             <p className="text-[2.4rem] leading-[2.8rem] text-customGrey mb-[4rem] text-center">
               Tech's I don't use everyday
             </p>
-            <div className="skills-section__secondary-skills-image-container flex gap-x-[3.2rem]">
+            <div className="skills-section__secondary-skills-image-container flex flex-wrap gap-y-[2.8rem] gap-x-[3.2rem]">
               <ImageWrapper icon={HtmlIcon} />
               <ImageWrapper icon={CssIcon} />
               <ImageWrapper icon={JsIcon} />
