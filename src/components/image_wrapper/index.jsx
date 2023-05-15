@@ -6,7 +6,7 @@ import Image from "next/image";
 
 
 
-function index({ icon, alt, styles, tailwindStyles, noPointer,...props }) {
+function index({ icon, alt, styles, tailwindStyles, noPointer,onClick, ...props }) {
 
   return (
     <Image
@@ -15,6 +15,7 @@ function index({ icon, alt, styles, tailwindStyles, noPointer,...props }) {
       className={...tailwindStyles}
       style={{ ...styles }}
       css={{ cursor:noPointer ? 'inital':'pointer' }}
+      onClick={onClick}
     />
   );
 }
