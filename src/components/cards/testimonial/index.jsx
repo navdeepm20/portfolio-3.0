@@ -6,7 +6,7 @@ import PersonImage from "@assets/testimonials/person1.svg";
 function index({ fill, ...props }) {
   return (
     <div
-      className={`testimonial-card-container ${
+      className={`testimonial-card-container max-w-[50rem] ${
         fill ? "" : "border"
       } rounded-[1.6rem] ${
         fill ? "" : "border-primary-bg-light"

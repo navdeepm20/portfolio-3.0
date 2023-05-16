@@ -12,6 +12,7 @@ import SkilsSection from "@components/sections/skills";
 import FooterSection from "@components/sections/footer";
 import ContactSection from "@components/sections/contact";
 import CarrierSection from "@components/sections/carrier";
+import VideoSection from "@components/sections/videos";
 
 const raleway = Raleway({ subsets: ["latin"] });
 //components
@@ -30,6 +31,7 @@ export default function Home() {
       <SkilsSection />
       <CarrierSection />
       <PortfolioSection />
+      <VideoSection />
       <TestimonialSection />
       <ContactSection />
       <FooterSection />

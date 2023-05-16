@@ -2,7 +2,7 @@ import React from "react";
 
 function index({ title, text, ...props }) {
   return (
-    <div className="carrier-card rounded-[1.6rem] border border-primary-bg-light p-[3rem]">
+    <div className="carrier-card rounded-[1.6rem] border border-primary-bg-light p-[3rem] max-w-[58rem]">
       <div className="carrier-card__info-container mb-[1.62rem]">
         <p className="font-bold text-[2rem] leading-[2.3rem] mb-[.83rem]">
           Designer na Viralizzi

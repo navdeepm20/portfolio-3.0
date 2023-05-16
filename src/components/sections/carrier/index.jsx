@@ -16,11 +16,11 @@ function index() {
               <p className="font-extrabold text-[3.2rem] leading-[3.8rem] mb-[.78rem] text-center ">
                 Professional
               </p>
-              <p className="text-center text-customGrey">
+              <p className="text-center text-customGrey text-[2.4rem]leading-[2.8rem]">
                 2021 &middot; Currently
               </p>
             </div>
-            <div className="carrier-section__profession-card-container">
+            <div className="carrier-section__profession-card-container flex flex-col gap-y-[6.4rem]">
               <CarrierCard />
               <CarrierCard />
               <CarrierCard />
@@ -34,11 +34,11 @@ function index() {
               <p className="font-extrabold text-[3.2rem] leading-[3.8rem] text-center mb-[.78rem]">
                 Academic
               </p>
-              <p className="text-center text-customGrey">
+              <p className="text-center text-customGrey text-[2.4rem]leading-[2.8rem]">
                 2016 &middot; Currently
               </p>
             </div>
-            <div className="carrier-section__profession-card-container">
+            <div className="carrier-section__profession-card-container flex flex-col gap-y-[6.4rem]">
               <CarrierCard />
               <CarrierCard />
               <CarrierCard />
