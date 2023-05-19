@@ -6,7 +6,7 @@ import Avatar from "@assets/avatar/AvatarAndIcons.svg";
 
 function index({ ...props }) {
   return (
-    <div className="bio-section py-[14.1rem] flex items-center justify-between ">
+    <div className="bio-section py-[14.1rem] flex items-center justify-center flex-wrap ">
       <ImageWrapper alt="avatar" icon={Avatar} tailwindStyles="max-w-[46rem]" />
       <div className="bio-section__content-container mb-[2.4rem]">
         <Badge icon={"🤔"} text="About Me" tailwindStyles="mb-[2.4rem]" />

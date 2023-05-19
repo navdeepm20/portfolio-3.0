@@ -10,7 +10,10 @@ function index() {
           <div className="flex items-center justify-between w-full">
             <p className="text-[4.8rem] font-extrabold">Works & Projects</p>
             <div className="portfolio-section__controls">
-              <div> Controls Will Come Here</div>
+              <div className="slider-container">
+                <input type="checkbox" id="switcher" />
+                <label htmlFor="switcher"></label>
+              </div>
             </div>
           </div>
         </div>

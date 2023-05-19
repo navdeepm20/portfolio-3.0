@@ -19,7 +19,10 @@ const raleway = Raleway({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="px-[14rem] overflow-hidden" style={raleway.style}>
+    <main
+      className="px-[8rem] sm:px-[10rem] md:px-[12rem] lg:px-[14rem] overflow-hidden"
+      style={raleway.style}
+    >
       {/* nav section */}
       <Navbar />
       {/* hero section */}

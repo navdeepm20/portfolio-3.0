@@ -8,7 +8,10 @@ import Logo from "@assets/logo/logo.svg";
 
 function Navbar({ ...props }) {
   return (
-    <div id="navbar" className="navbar-outer pt-[3.8rem] pb-[10.1rem]">
+    <div
+      id="navbar"
+      className="navbar-outer pt-[3.8rem] pb-[10.1rem] hidden md:block"
+    >
       <div className="navbar-inner flex items-center justify-between rounded-[1.6rem] bg-[rgba(123,74,226,0.05)] pt-[1.215rem] pb-[1.476rem] px-[24px]">
         <div className="navbar__logo">
           <Image src={Logo} alt="logo" />
