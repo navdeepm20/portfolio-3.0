@@ -8,7 +8,7 @@ import DeisgnationSection from "@components/sections/designation";
 import BioSection from "@components/sections/bio";
 import PortfolioSection from "@components/sections/portfolio";
 import TestimonialSection from "@components/sections/testimonials";
-import SkilsSection from "@components/sections/skills";
+import SkillsSection from "@components/sections/skills";
 import FooterSection from "@components/sections/footer";
 import ContactSection from "@components/sections/contact";
 import CarrierSection from "@components/sections/carrier";
@@ -32,7 +32,7 @@ export default function Home() {
       <DeisgnationSection />
       <Divider />
       <BioSection />
-      <SkilsSection />
+      <SkillsSection />
       <CarrierSection />
       <PortfolioSection />
       <VideoSection />
