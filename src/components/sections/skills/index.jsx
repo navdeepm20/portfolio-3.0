@@ -2,14 +2,14 @@
 import ImageWrapper from "@components/image_wrapper";
 import Badge from "@components/badges";
 //assets
-import GithubIcon from "@assets/skills/Github.svg";
-import JsIcon from "@assets/skills/Javascript.svg";
-import NextJsIcon from "@assets/skills/Nextjs.svg";
-import TSIcon from "@assets/skills/Typescript.svg";
-import HtmlIcon from "@assets/skills/Html5.svg";
-import CssIcon from "@assets/skills/Css3.svg";
-import ReactIcon from "@assets/skills/React.svg";
-import GitIcon from "@assets/skills/Git.svg";
+import GithubIcon from "@assets/skills/github.svg";
+import JsIcon from "@assets/skills/javascript.svg";
+import NextJsIcon from "@assets/skills/nextjs.svg";
+import TSIcon from "@assets/skills/typescript.svg";
+import HtmlIcon from "@assets/skills/html5.svg";
+import CssIcon from "@assets/skills/css3.svg";
+import ReactIcon from "@assets/skills/react.svg";
+import GitIcon from "@assets/skills/git.svg";
 
 function index({ ...props }) {
   const CustomBadgeText = ({ ...props }) => (

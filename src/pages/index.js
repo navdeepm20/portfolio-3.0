@@ -18,7 +18,6 @@ const raleway = Raleway({ subsets: ["latin"] });
 //components
 
 export default function Home() {
-  console.log(process.env?.NEXT_PUBLIC_ANALYTICS_ID);
   return (
     <main
       className="px-[3rem] sm:px-[6rem] md:px-[12rem] lg:px-[14rem] overflow-hidden"
