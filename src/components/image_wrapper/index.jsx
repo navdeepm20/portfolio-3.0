@@ -4,17 +4,22 @@
 import Image from "next/image";
 //libs
 
-
-
-function index({ icon, alt, styles, tailwindStyles, noPointer,onClick, ...props }) {
-
+function index({
+  icon,
+  alt,
+  styles,
+  tailwindStyles,
+  noPointer,
+  onClick,
+  ...props
+}) {
   return (
     <Image
       src={icon}
       alt={alt}
-      className={...tailwindStyles}
+      className={tailwindStyles}
       style={{ ...styles }}
-      css={{ cursor:noPointer ? 'inital':'pointer' }}
+      css={{ cursor: noPointer ? "inital" : "pointer" }}
       onClick={onClick}
     />
   );
