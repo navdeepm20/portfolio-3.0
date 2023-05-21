@@ -9,7 +9,7 @@ function index() {
       <p className="text-[4.8rem] font-extrabold mb-[6.4rem]">
         Trajectory Until Here
       </p>
-      <div className="carrier-info-container grid grid-cols-2 gap-x-[24.1rem] gap-y-[6.4rem] w-full">
+      <div className="carrier-info-container grid grid-cols-1 md:grid-cols-2 gap-x-[24.1rem] gap-y-[6.4rem] w-full">
         <div className="job-exp-container flex justify-center ">
           <div className="profession-info-container">
             <div className="profession-title-container mb-[6.49rem]">

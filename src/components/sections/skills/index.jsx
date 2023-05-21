@@ -29,9 +29,9 @@ function index({ ...props }) {
         <div className="skills-section__skills-container ">
           <div className="skills-section__primary-skills mb-[6rem]">
             <p className="text-[2.4rem] leading-[2.8rem] text-customGrey mb-[4rem] text-center">
-              Tech's I use everyday
+              Technologies I use everyday
             </p>
-            <div className="skills-section__primary-skills-image-container flex flex-wrap gap-y-[2.8rem] gap-x-[3.2rem]">
+            <div className="skills-section__primary-skills-image-container flex flex-wrap gap-y-[2.8rem] gap-x-[3.2rem] justify-center">
               <ImageWrapper icon={HtmlIcon} />
               <ImageWrapper icon={CssIcon} />
               <ImageWrapper icon={JsIcon} />
@@ -44,9 +44,9 @@ function index({ ...props }) {
           </div>
           <div className="skills-section__secondary-skills">
             <p className="text-[2.4rem] leading-[2.8rem] text-customGrey mb-[4rem] text-center">
-              Tech's I don't use everyday
+              Technologies I do not use everyday
             </p>
-            <div className="skills-section__secondary-skills-image-container flex flex-wrap gap-y-[2.8rem] gap-x-[3.2rem]">
+            <div className="skills-section__secondary-skills-image-container flex flex-wrap gap-y-[2.8rem] gap-x-[3.2rem] justify-center">
               <ImageWrapper icon={HtmlIcon} />
               <ImageWrapper icon={CssIcon} />
               <ImageWrapper icon={JsIcon} />

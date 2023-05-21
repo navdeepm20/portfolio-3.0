@@ -5,7 +5,7 @@ import TestimonialCard from "@components/cards/testimonial";
 function index({ ...props }) {
   return (
     <div className="testimonial-section mb-[14rem]">
-      <div className="testimonials-section__top-area flex items-center justify-between mb-[10rem]">
+      <div className="testimonials-section__top-area flex items-center justify-between mb-[10rem] overflow-scroll">
         <div className="testimonials-section__title-container w-full">
           <Badge
             text="Recommendations"
@@ -20,7 +20,7 @@ function index({ ...props }) {
           </div>
         </div>
       </div>
-      <div className="testimonial-section__cards-container flex">
+      <div className="testimonial-section__cards-container flex overflow-scroll">
         <TestimonialCard />
         <TestimonialCard fill={true} />
         <TestimonialCard />

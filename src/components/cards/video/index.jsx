@@ -7,16 +7,16 @@ import VideoImage from "@assets/video/VideoImg.svg";
 
 function index({ ...props }) {
   return (
-    <div className="video-card-container px-[2.9rem] py-[3rem] border border-primary-bg-light rounded-[1.6rem] max-w-[50rem] mb-[14rem]">
+    <div className="video-card-container px-[2.9rem] py-[3rem] border border-primary-bg-light rounded-[1.6rem] max-w-[50rem]">
       <ImageWrapper icon={VideoImage} alt="video_thumbnail" />
-      <div className="video-detail flex items-center justify-between mt-[2.39rem]">
+      <div className="video-detail flex items-center justify-between mt-[2.39rem] gap-x-[3rem]">
         <div className="video-info ">
           <p className="mb-[1.078rem] font-bold text-[2rem] leading-[2.3rem]">
             Move.it
           </p>
           <p className="text-[1.8rem] leading-[2.1rem]">Move.it</p>
         </div>
-        <div className="video-category">
+        <div className="video-category flex flex-col gap-y-4 ">
           <Badge
             text="React"
             tailwindStyles="mr-[.8rem]"
