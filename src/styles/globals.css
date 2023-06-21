@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #090e16;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7b4ae2;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.video-container__video-card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-section__cards-container::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;

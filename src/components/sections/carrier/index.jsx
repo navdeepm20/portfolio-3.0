@@ -6,7 +6,7 @@ function index() {
   return (
     <div className="carrier-section mb-[14rem] flex justify-center flex-col items-center">
       <Badge icon="💼" text="Carrier" tailwindStyles="mb-[2.4rem]" />
-      <p className="text-[4.8rem] font-extrabold mb-[6.4rem]">
+      <p className="text-[4.8rem] font-extrabold mb-[6.4rem] text-center">
         Trajectory Until Here
       </p>
       <div className="carrier-info-container grid grid-cols-1 md:grid-cols-2 gap-x-[24.1rem] gap-y-[6.4rem] w-full">

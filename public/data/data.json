@@ -1,0 +1,73 @@
+{
+	"siteTitle": "Navdeep Mishra | Portfolio",
+	"personal": {
+		"show": true,
+		"data": {
+			"name": "Navdeep Mishra",
+			"designationPrimary": "FullStack Developer",
+			"designationSecondary": "Tech Enthusiast",
+			"githubLink": "https://github.com/navdeepm20",
+			"linkedInLink": "https://in.linkedin.com/in/navdeepm20"
+		}
+	},
+	"work": {
+		"show": true,
+		"data": [
+			{
+				"title": "FullStack Developer",
+				"desc": ""
+			},
+			{
+				"title": "Freelancer",
+				"desc": ""
+			}
+		]
+	},
+	"about": {
+		"show": true,
+		"data": {
+			"title": "Navdeep Mishra",
+			"details": {
+				"personal": "Hi, My name is Navdeep Mishra",
+				"work": "For} over 2years working with full stack application",
+				"study": "Graduated in Bachelor in computer applications",
+				"interested": "Interested in full stack development",
+				"funFact": "Trying to be a little better than yesterday every day"
+			}
+		}
+	},
+	"project": {
+		"show": true,
+		"data": [
+			{
+				"title": "Test Project",
+				"description": "hello world"
+			}
+		]
+	},
+	"videos": {
+		"show": true,
+		"data": [
+			{
+				"title": "Test Project",
+				"description": "hello world"
+			}
+		]
+	},
+	"testimonials": {
+		"show": true,
+		"data": [
+			{
+				"title": "Test Project",
+				"description": "hello world"
+			}
+		]
+	},
+	"contact": {
+		"show": true,
+		"data": {
+			"email": "navdeepmishra82734@gmail.com",
+			"whatsapp": ""
+		}
+	}
+}

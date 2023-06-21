@@ -1,5 +1,6 @@
 //next js
 import Image from "next/image";
+import Link from "next/link";
 //assets
 import GithubLogo from "@assets/social_media-icons/github.svg";
 import LinkedInLogo from "@assets/social_media-icons/linkedin.svg";
@@ -8,6 +9,10 @@ import DownloadIcon from "@assets/icons/ArrowLineDown.svg";
 //components
 import Btn from "../../button";
 import Badge from "../../badges";
+//react
+import { useEffect, useState } from "react";
+//data
+import data from "@public/data/data.json";
 
 function index({ ...props }) {
   return (
@@ -15,14 +20,19 @@ function index({ ...props }) {
       <div className="hero-section__personal-info order-2 md:order-1">
         <Badge icon={"👋"} text="Greetings!" tailwindStyles="mb-[2.4rem]" />
         <p className="text-white text-[5.2rem] leading-[6.1rem] font-extrabold mb-[1.6rem]">
-          Navdeep Mishra
+          {data?.personal?.data?.name}
         </p>
         <p className="text-[2rem] leading-[2.3rem] text-customGrey mb-[2.476rem]">
-          Full Stack Developer &middot; Tech Enthusiat
+          {data?.personal?.data?.designationPrimary} &middot;{" "}
+          {data?.personal?.data?.designationSecondary}
         </p>
         <div className="hero-section__personal-info-social-icons  gap-[1.5rem] hidden sm:flex ">
-          <Image src={GithubLogo} alt="github_logo" />
-          <Image src={LinkedInLogo} alt="linkedIn_logo" />
+          <Link href={`${data?.personal?.data?.githubLink}`}>
+            <Image src={GithubLogo} alt="github_logo" />
+          </Link>
+          <Link href={`${data?.personal?.data?.linkedInLink}`}>
+            <Image src={LinkedInLogo} alt="linkedIn_logo" />
+          </Link>
         </div>
       </div>
       <div className="hero-section__avatar order-1 md:order-2 ">
