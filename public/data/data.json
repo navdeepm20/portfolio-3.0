@@ -10,16 +10,18 @@
 			"linkedInLink": "https://in.linkedin.com/in/navdeepm20"
 		}
 	},
-	"work": {
+	"designation": {
 		"show": true,
 		"data": [
 			{
 				"title": "FullStack Developer",
-				"desc": ""
+				"experience": "2 years in",
+				"description": "FullStack"
 			},
 			{
 				"title": "Freelancer",
-				"desc": ""
+				"experience": "2 years in",
+				"description": "Freelance"
 			}
 		]
 	},
@@ -29,7 +31,7 @@
 			"title": "Navdeep Mishra",
 			"details": {
 				"personal": "Hi, My name is Navdeep Mishra",
-				"work": "For} over 2years working with full stack application",
+				"work": "For over 2years working with full stack application",
 				"study": "Graduated in Bachelor in computer applications",
 				"interested": "Interested in full stack development",
 				"funFact": "Trying to be a little better than yesterday every day"
