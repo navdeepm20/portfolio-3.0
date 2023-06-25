@@ -1,7 +1,8 @@
 //internal components
 import Badge from "@components/badges";
 import CarrierCard from "@components/cards/carrier";
-
+//data
+import data from "@public/data/data.json";
 function index() {
   return (
     <div className="carrier-section mb-[14rem] flex justify-center flex-col items-center">
@@ -17,14 +18,22 @@ function index() {
                 Professional
               </p>
               <p className="text-center text-customGrey text-[2.4rem]leading-[2.8rem]">
-                2021 &middot; Currently
+                {data?.carrier?.professional?.title}
               </p>
             </div>
             <div className="carrier-section__profession-card-container flex flex-col gap-y-[6.4rem]">
-              <CarrierCard />
-              <CarrierCard />
-              <CarrierCard />
-              <CarrierCard />
+              {data?.carrier?.professional?.data?.map(
+                (professionaInfo, index) => (
+                  <CarrierCard
+                    title={professionaInfo?.title}
+                    description={professionaInfo?.description}
+                    startedOn={professionaInfo?.startedOn}
+                    endedOn={professionaInfo?.completedOn}
+                    hideTillToday={false}
+                    key={index}
+                  />
+                )
+              )}
             </div>
           </div>
         </div>
@@ -35,14 +44,20 @@ function index() {
                 Academic
               </p>
               <p className="text-center text-customGrey text-[2.4rem]leading-[2.8rem]">
-                2016 &middot; Currently
+                {data?.carrier?.academic?.title}
               </p>
             </div>
             <div className="carrier-section__profession-card-container flex flex-col gap-y-[6.4rem]">
-              <CarrierCard />
-              <CarrierCard />
-              <CarrierCard />
-              <CarrierCard />
+              {data?.carrier?.academic?.data?.map((academic, index) => (
+                <CarrierCard
+                  title={academic?.title}
+                  description={academic?.description}
+                  startedOn={academic?.startedOn}
+                  endedOn={academic?.completedOn}
+                  hideTillToday={true}
+                  key={index}
+                />
+              ))}
             </div>
           </div>
         </div>

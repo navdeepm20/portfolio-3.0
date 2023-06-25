@@ -3,7 +3,7 @@ import ImageWrapper from "@components/image_wrapper";
 //assets
 import QuotesIcon from "@assets/testimonials/Quotes.svg";
 import PersonImage from "@assets/testimonials/person1.svg";
-function index({ fill, ...props }) {
+function index({ fill, tailwindStyles, ...props }) {
   return (
     <div
       className={`testimonial-card-container min-w-[35rem] max-w-[50rem] ${
@@ -12,7 +12,7 @@ function index({ fill, ...props }) {
         fill ? "" : "border-primary-bg-light"
       } p-[3rem] flex flex-col flex-auto [&:not(:last-child)]:mr-[7rem]  ${
         fill ? "bg-primary-bg-extraLight" : ""
-      }`}
+      } ${tailwindStyles}`}
     >
       <div className="quote-container mb-[1.2rem]">
         <ImageWrapper icon={QuotesIcon} alt="quote-icon" />

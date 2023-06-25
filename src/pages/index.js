@@ -17,6 +17,9 @@ import VideoSection from "@components/sections/videos";
 const raleway = Raleway({ subsets: ["latin"] });
 //components
 
+//data
+import data from "@public/data/data.json";
+
 export default function Home() {
   return (
     <main
@@ -24,19 +27,26 @@ export default function Home() {
       style={raleway.style}
     >
       {/* nav section */}
+
       <Navbar />
       {/* hero section */}
-      <HeroSection />
+      {data?.personal?.show && <HeroSection />}
+
       <Divider />
-      <DeisgnationSection />
+      {data?.designation?.show && <DeisgnationSection />}
+
       <Divider />
-      <BioSection />
-      <SkillsSection />
-      <CarrierSection />
-      <PortfolioSection />
-      <VideoSection />
-      <TestimonialSection />
-      <ContactSection />
+      {data?.about?.show && <BioSection />}
+
+      {data?.skills?.show && <SkillsSection />}
+
+      {data?.carrier?.show && <CarrierSection />}
+
+      {data?.portfolio?.show && <PortfolioSection />}
+      {data?.videos?.show && <VideoSection />}
+      {data?.testimonials?.show && <TestimonialSection />}
+      {data?.contact?.show && <ContactSection />}
+
       <FooterSection />
     </main>
   );

@@ -38,17 +38,64 @@
 			}
 		}
 	},
-	"project": {
+	"skills": {
+		"show": true,
+		"data": []
+	},
+	"carrier": {
+		"show": true,
+		"professional": {
+			"show": true,
+			"title": "2021 - At the moment",
+			"data": [
+				{
+					"title": "Project Manager & Software Engineer ",
+					"description": "Working as Project Manager and Software Engineer. Building products and making world more better.",
+					"startedOn": "2021-11-15T18:30:00.000Z",
+					"completedOn": null,
+					"isContinue": true
+				},
+				{
+					"title": "Associate",
+					"description": "Worked as associate at HCL Technologies.",
+					"startedOn": "2021-06-29T18:30:00.000Z",
+					"completedOn": "2021-09-02T18:30:00.000Z",
+					"isContinue": false
+				}
+			]
+		},
+		"academic": {
+			"show": true,
+			"title": "2021 - At the moment",
+			"data": [
+				{
+					"title": "Bachelor of Computer Applications - (BCA)",
+					"description": "Completed my graduation from Amrapali Group of Institute. Aff. Kumaun University",
+					"startedOn": "2018-07-01T18:30:00.000Z",
+					"isContinue": false,
+					"completedOn": "2021-11-29T18:30:00.000Z"
+				},
+				{
+					"title": "Sr. Secondary & Secondary Education",
+					"description": "Completed my Sr. Secondary and Secondary schooling from Maharishi Vidya Mandir. Aff. CBSE",
+					"startedOn": "2016-04-01T18:30:00.000Z",
+					"isContinue": false,
+					"completedOn": "2018-04-01T18:30:00.000Z"
+				}
+			]
+		}
+	},
+	"portfolio": {
 		"show": true,
 		"data": [
 			{
 				"title": "Test Project",
-				"description": "hello world"
+				"description": "hello world "
 			}
 		]
 	},
 	"videos": {
-		"show": true,
+		"show": false,
 		"data": [
 			{
 				"title": "Test Project",

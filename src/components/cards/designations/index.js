@@ -1,5 +1,4 @@
 function index({ data, ...props }) {
-  console.log(data, "sdf");
   return (
     <div
       className="rounded-[1.6rem] flex justify-between py-[2.7rem] px-[2rem] bg-primary-bg-extraLight w-full

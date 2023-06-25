@@ -20,10 +20,10 @@ function index({ ...props }) {
           </div>
         </div>
       </div>
-      <div className="testimonial-section__cards-container flex overflow-x-scroll sm:overflow-auto">
-        <TestimonialCard />
-        <TestimonialCard fill={true} />
-        <TestimonialCard />
+      <div className="testimonial-section__cards-container flex overflow-x-scroll snap-x  sm:overflow-auto">
+        <TestimonialCard tailwindStyles="snap-start snap-always  " />
+        <TestimonialCard fill={true} tailwindStyles="snap-start snap-always " />
+        <TestimonialCard tailwindStyles="snap-start snap-always " />
       </div>
     </div>
   );

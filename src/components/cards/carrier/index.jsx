@@ -1,23 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
+//libs
+import dayjs from "dayjs";
+import * as relativeTime from "dayjs/plugin/relativeTime";
+import * as customParseFormat from "dayjs/plugin/customParseFormat";
+dayjs.extend(relativeTime);
+dayjs.extend(customParseFormat);
 
-function index({ title, text, ...props }) {
+function index({
+  title,
+  description,
+  startedOn,
+  endedOn,
+  isContinue,
+  hideTillToday,
+  ...props
+}) {
   return (
     <div className="carrier-card rounded-[1.6rem] border border-primary-bg-light p-[3rem] max-w-[58rem]">
       <div className="carrier-card__info-container mb-[1.62rem]">
         <p className="font-bold text-[2rem] leading-[2.3rem] mb-[.83rem]">
-          Designer na Viralizzi
+          {title}
         </p>
-        <p className="text-[1.6rem] leading-[1.9rem]">
-          Disponibilizando serviços para mídias digitais na Viralizzi como
-          Designer.
-        </p>
+        <p className="text-[1.6rem] leading-[1.9rem]">{description}</p>
       </div>
       <div className="carrier-card__timeline-container flex">
-        <span className="mr-auto font-bold text-[1.8rem] leading-[2.1rem] text-primary-bg-light">
-          2years
-        </span>
+        {!hideTillToday && (
+          <span className="mr-auto font-bold text-[1.8rem] leading-[2.1rem] text-primary-bg-light">
+            {dayjs(new Date()).from(startedOn, true)}
+          </span>
+        )}
         <span className="ml-auto text-[1.8rem] leading-[2.1rem] text-primary-bg-light">
-          Lorem, ipsum.
+          {dayjs(startedOn).format("MMM-YYYY")} &middot;{" "}
+          {endedOn ? dayjs(endedOn).format("MMM-YYYY") : "Present"}
         </span>
       </div>
     </div>
