@@ -4,7 +4,7 @@ import TestimonialCard from "@components/cards/testimonial";
 
 function index({ ...props }) {
   return (
-    <div className="testimonial-section mb-[14rem]">
+    <div className="testimonial-section mb-[14rem] ">
       <div className="testimonials-section__top-area flex items-center justify-between mb-[10rem] ">
         <div className="testimonials-section__title-container w-full">
           <Badge
@@ -20,9 +20,11 @@ function index({ ...props }) {
           </div>
         </div>
       </div>
-      <div className="testimonial-section__cards-container flex overflow-x-scroll snap-x  sm:overflow-auto">
-        <TestimonialCard tailwindStyles="snap-start snap-always  " />
+      <div className="testimonial-section__cards-container flex overflow-x-scroll snap-x  sm:overflow-auto relative  w-screen left-[50%] translate-x-[-50%] scroll-px-[5.5rem] sm:scroll-px-[6rem] md:scroll-px-[12rem] lg:scroll-px-[14rem] ">
+        <TestimonialCard tailwindStyles="snap-start snap-always ml-[3rem] sm:ml-[6rem] md:ml-[12rem] lg:ml-[14rem] " />
         <TestimonialCard fill={true} tailwindStyles="snap-start snap-always " />
+        <TestimonialCard tailwindStyles="snap-start snap-always " />
+        <TestimonialCard tailwindStyles="snap-start snap-always " fill={true} />
         <TestimonialCard tailwindStyles="snap-start snap-always " />
       </div>
     </div>
