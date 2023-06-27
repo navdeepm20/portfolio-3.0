@@ -10,7 +10,6 @@ import TSIcon from "@assets/skills/typescript.svg";
 import HtmlIcon from "@assets/skills/html5.svg";
 import CssIcon from "@assets/skills/css3.svg";
 import ReactIcon from "@assets/skills/react.svg";
-import NextjsIcon from "@assets/skills/next.svg";
 import DjanogIcon from "@assets/skills/django.svg";
 import ElectronIcon from "@assets/skills/electron.svg";
 import ReduxIcon from "@assets/skills/redux.svg";
@@ -20,6 +19,7 @@ import PythonIcon from "@assets/skills/python.svg";
 import DbIcon from "@assets/skills/databases.svg";
 import AppwriteIcon from "@assets/skills/appwrite.svg";
 import SassIcon from "@assets/skills/sass.svg";
+import FigmaIcon from "@assets/skills/figma.svg";
 
 function index({ ...props }) {
   const CustomBadgeText = ({ ...props }) => (
@@ -42,18 +42,58 @@ function index({ ...props }) {
               Technologies I use everyday
             </p>
             <div className="skills-section__primary-skills-image-container flex flex-wrap gap-y-[2.8rem] gap-x-[3.2rem] justify-center">
-              <ImageWrapper icon={HtmlIcon} />
-              <ImageWrapper icon={CssIcon} />
-              <ImageWrapper icon={JsIcon} />
-              <ImageWrapper icon={TSIcon} />
-              <ImageWrapper icon={NextJsIcon} />
-              <ImageWrapper icon={ReactIcon} />
-              <ImageWrapper icon={ReduxIcon} tailwindStyles="w-[6.4rem] " />
-              <ImageWrapper icon={ElectronIcon} tailwindStyles="w-[6.4rem] " />
-              <ImageWrapper icon={MuiIcon} tailwindStyles="w-[6.4rem] " />
-              <ImageWrapper icon={TailwindIcon} tailwindStyles="w-[6.4rem] " />
-              <ImageWrapper icon={GitIcon} />
-              <ImageWrapper icon={GithubIcon} />
+              <ImageWrapper
+                icon={HtmlIcon}
+                tailwindStyles="hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={CssIcon}
+                tailwindStyles="hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={JsIcon}
+                tailwindStyles="hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={TSIcon}
+                tailwindStyles="hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={FigmaIcon}
+                tailwindStyles="hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={NextJsIcon}
+                tailwindStyles="hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={ReactIcon}
+                tailwindStyles="hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={ReduxIcon}
+                tailwindStyles="hover:animate-pulse w-[6.4rem]"
+              />
+              <ImageWrapper
+                icon={ElectronIcon}
+                tailwindStyles="hover:animate-pulse w-[6.4rem] "
+              />
+              <ImageWrapper
+                icon={MuiIcon}
+                tailwindStyles="hover:animate-pulse w-[6.4rem] "
+              />
+              <ImageWrapper
+                icon={TailwindIcon}
+                tailwindStyles="hover:animate-pulse w-[6.4rem] "
+              />
+              <ImageWrapper
+                icon={GitIcon}
+                tailwindStyles="hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={GithubIcon}
+                tailwindStyles="hover:animate-pulse"
+              />
             </div>
           </div>
           <div className="skills-section__secondary-skills">
@@ -61,11 +101,26 @@ function index({ ...props }) {
               Technologies I do not use everyday
             </p>
             <div className="skills-section__secondary-skills-image-container flex flex-wrap gap-y-[2.8rem] gap-x-[3.2rem] justify-center">
-              <ImageWrapper icon={SassIcon} tailwindStyles="w-[6.4rem] " />
-              <ImageWrapper icon={PythonIcon} tailwindStyles="w-[6.4rem] " />
-              <ImageWrapper icon={DjanogIcon} tailwindStyles="w-[6.4rem] " />
-              <ImageWrapper icon={DbIcon} tailwindStyles="w-[6.4rem] " />
-              <ImageWrapper icon={AppwriteIcon} tailwindStyles="w-[6.4rem] " />
+              <ImageWrapper
+                icon={SassIcon}
+                tailwindStyles="w-[6.4rem] hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={PythonIcon}
+                tailwindStyles="w-[6.4rem] hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={DjanogIcon}
+                tailwindStyles="w-[6.4rem] hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={DbIcon}
+                tailwindStyles="w-[6.4rem] hover:animate-pulse"
+              />
+              <ImageWrapper
+                icon={AppwriteIcon}
+                tailwindStyles="w-[6.4rem] hover:animate-pulse"
+              />
             </div>
           </div>
         </div>
