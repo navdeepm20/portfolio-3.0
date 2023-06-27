@@ -25,7 +25,7 @@ function index({ ...props }) {
         <TestimonialCard fill={true} tailwindStyles="snap-start snap-always " />
         <TestimonialCard tailwindStyles="snap-start snap-always " />
         <TestimonialCard tailwindStyles="snap-start snap-always " fill={true} />
-        <TestimonialCard tailwindStyles="snap-start snap-always " />
+        <TestimonialCard tailwindStyles="snap-start snap-always mr-[3rem] sm:mr-[6rem] md:mr-[12rem] lg:mr-[14rem]" />
       </div>
     </div>
   );
