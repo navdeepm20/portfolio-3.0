@@ -64,3 +64,56 @@ body {
     font-size: 50%;
   }
 }
+
+/* styles for the three options switch */
+.toggle-container {
+  /* border: 1px solid #7b4ae2; */
+  padding: 0rem 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  min-height: 5rem;
+}
+.toggle-container label {
+  cursor: pointer;
+}
+.toggle-container::before {
+  content: "";
+  height: 100%;
+  width: 33%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: -1;
+  border-radius: 0.8rem;
+  transition: 0.5s all ease;
+  border: 0.1rem solid #7b4ae2;
+}
+
+.toggle-container input {
+  display: none;
+}
+.toggle-container :not(:last-child) {
+  margin-right: 2rem;
+}
+
+.toggle-container:has(#i1:checked)::before {
+  left: 1.5%;
+  background-color: #14142a;
+}
+
+.toggle-container:has(#i2:checked)::before {
+  left: 33.5%;
+  width: 33%;
+  background-color: #14142a;
+}
+.toggle-container:has(#i3:checked)::before {
+  left: 65.8%;
+  width: 33%;
+  background-color: #14142a;
+}
