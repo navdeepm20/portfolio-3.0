@@ -87,7 +87,7 @@ function Index() {
       </div>
       <div className="portfolio-section__projects grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-[5.6rem] gap-y-[4.8rem] ">
         {projectsInfo
-          .filter((projecI, index) => activeCategory === project?.category)
+          .filter((project, index) => activeCategory === project?.category)
           .map((projectInfo, index) => (
             <PortfolioCard
               key={index}
