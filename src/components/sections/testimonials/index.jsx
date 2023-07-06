@@ -8,7 +8,7 @@ import CarretIcon from "@public/static/testimonials/carret.svg";
 //react
 import { useRef } from "react";
 
-function index({ ...props }) {
+function Index({ ...props }) {
   const scrollRef = useRef();
 
   const handleNext = (e) => {
@@ -66,4 +66,4 @@ function index({ ...props }) {
   );
 }
 
-export default index;
+export default Index;

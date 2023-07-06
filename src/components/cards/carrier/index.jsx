@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 //libs
 import dayjs from "dayjs";
 import * as relativeTime from "dayjs/plugin/relativeTime";

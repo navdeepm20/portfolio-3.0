@@ -9,8 +9,7 @@ import DownloadIcon from "@assets/icons/ArrowLineDown.svg";
 //components
 import Btn from "../../button";
 import Badge from "../../badges";
-//react
-import { useEffect, useState } from "react";
+
 //data
 import data from "@public/data/data.json";
 
