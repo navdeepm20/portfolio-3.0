@@ -22,6 +22,7 @@ function Navbar({ ...props }) {
               <Link
                 key={`${index}`}
                 href={navLink?.url}
+                scroll={false}
                 className="first:font-bold first:text-primary-bg-light text-[1.8rem] font-thin leading-[1.7rem] mr-[1.6rem] text-customGrey [&:not(:first-child)]:hover:text-customGrey/100"
               >
                 {navLink?.label}

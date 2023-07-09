@@ -5,7 +5,10 @@ import CarrierCard from "@components/cards/carrier";
 import data from "@public/data/data.json";
 function index() {
   return (
-    <div className="carrier-section mb-[14rem] flex justify-center flex-col items-center">
+    <div
+      className="carrier-section mb-[14rem] flex justify-center flex-col items-center scroll-m-[5rem]"
+      id="carrier"
+    >
       <Badge icon="💼" text="Carrier" tailwindStyles="mb-[2.4rem]" />
       <p className="text-[4.8rem] font-extrabold mb-[6.4rem] text-center">
         Trajectory Until Here

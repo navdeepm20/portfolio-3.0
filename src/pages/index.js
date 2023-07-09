@@ -23,7 +23,7 @@ import data from "@public/data/data.json";
 export default function Home() {
   return (
     <main
-      className="px-[3rem] sm:px-[6rem] md:px-[12rem] lg:px-[14rem] overflow-hidden"
+      className="px-[3rem] sm:px-[6rem] md:px-[12rem] lg:px-[14rem] overflow-hidden snap-y main-container"
       style={raleway.style}
     >
       {/* nav section */}

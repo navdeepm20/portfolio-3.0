@@ -13,13 +13,12 @@ function Index({ ...props }) {
 
   const handleNext = (e) => {
     scrollRef.current.scrollLeft += 420;
-    console.log(scrollRef?.current?.scrollLeft);
   };
   const handlePrevious = (e) => {
     scrollRef.current.scrollLeft -= 420;
   };
   return (
-    <div className="testimonial-section mb-[14rem] ">
+    <div className="testimonial-section mb-[14rem] " id="testimonials">
       <div className="testimonials-section__top-area flex items-center justify-between mb-[10rem] ">
         <div className="testimonials-section__title-container w-full">
           <Badge

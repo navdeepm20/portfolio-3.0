@@ -26,7 +26,7 @@ function index({ ...props }) {
     <span>Skills &middot; Experiences</span>
   );
   return (
-    <div className="skills-section flex flex-col mb-[14rem]">
+    <div className="skills-section flex flex-col mb-[14rem]" id="skills">
       <div className="flex flex-col items-center">
         <Badge
           icon="👨‍💻"

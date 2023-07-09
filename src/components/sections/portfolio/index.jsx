@@ -46,9 +46,11 @@ function Index() {
     }
   };
 
-  console.log(projectCategory);
   return (
-    <div className="portfolio-section mb-[14rem]">
+    <div
+      className="portfolio-section mb-[14rem] scroll-m-[5rem]"
+      id="portfolio"
+    >
       <div className="portfolio-section__top-area flex items-center justify-between mb-[10rem]">
         <div className="portfolio-section__title-container w-full">
           <Badge text="Portfolio" icon={`🔗`} tailwindStyles="mb-[2.4rem]" />

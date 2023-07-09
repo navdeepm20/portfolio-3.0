@@ -16,7 +16,7 @@ function index({ ...props }) {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="contact-section mb-[20.7rem]">
+    <div className="contact-section mb-[20.7rem]" id="contact">
       <div className="contact-section-container mx-auto flex flex-col justify-center items-center flex-wrap">
         <Badge icon={"📬"} text="Contact Us" tailwindStyles="mb-[2.4rem]" />
         <p className="text-[4.8rem] font-extrabold mb-[6.4rem]">
