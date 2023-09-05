@@ -64,3 +64,12 @@ body {
     font-size: 50%;
   }
 }
+
+.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-up {
+  transform: translateY(0);
+  opacity: 1;
+}

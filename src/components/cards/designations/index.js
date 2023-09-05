@@ -1,8 +1,11 @@
-function index({ data, ...props }) {
+import React from "react";
+
+const DesignationsCard = React.forwardRef(({ data, ...props }, ref) => {
   return (
     <div
-      className="rounded-[1.6rem] flex justify-between py-[2.7rem] px-[2rem] bg-primary-bg-extraLight w-full
+      className="rounded-[1.6rem] flex justify-between py-[2.7rem] px-[2rem] bg-primary-bg-extraLight w-full duration-500 transition-all translate-x-[100%] opacity-0
 	"
+      ref={ref}
     >
       {data?.data?.map((position, index) => {
         return (
@@ -18,11 +21,12 @@ function index({ data, ...props }) {
       })}
     </div>
   );
-}
+});
 
-export default index;
+DesignationsCard.displayName = "DesignationsCard";
+export default DesignationsCard;
 
-index.defaultProps = {
+DesignationsCard.defaultProps = {
   data: [
     {
       title: "Developer",
