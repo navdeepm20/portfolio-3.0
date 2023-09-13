@@ -2,27 +2,26 @@
 
 //nextjs
 import Image from "next/image";
-//libs
+//react
+import { forwardRef } from "react";
 
-function index({
-  icon,
-  alt,
-  styles,
-  tailwindStyles,
-  noPointer,
-  onClick,
-  ...props
-}) {
-  return (
-    <Image
-      src={icon}
-      alt={alt}
-      className={tailwindStyles}
-      style={{ ...styles }}
-      css={{ cursor: noPointer ? "inital" : "pointer" }}
-      onClick={onClick}
-    />
-  );
-}
+const ImageWrapper = forwardRef(
+  (
+    { icon, alt, styles, tailwindStyles, noPointer, onClick, ...props },
+    ref
+  ) => {
+    return (
+      <Image
+        src={icon}
+        alt={alt}
+        className={tailwindStyles}
+        style={{ ...styles }}
+        css={{ cursor: noPointer ? "inital" : "pointer" }}
+        onClick={onClick}
+      />
+    );
+  }
+);
 
-export default index;
+ImageWrapper.displayName = "ImageWrapper";
+export default ImageWrapper;

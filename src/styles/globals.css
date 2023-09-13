@@ -73,3 +73,6 @@ body {
   transform: translateY(0);
   opacity: 1;
 }
+.opacity-back {
+  opacity: 1;
+}

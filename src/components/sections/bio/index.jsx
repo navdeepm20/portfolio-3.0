@@ -5,10 +5,20 @@ import Badge from "@components/badges";
 import Avatar from "@assets/avatar/AvatarAndIcons.svg";
 //data
 import data from "@public/data/data.json";
-
-function index({ ...props }) {
+//lib
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+function BioSection({ ...props }) {
+  const { entry, inView, ref } = useInView({ threshold: 0.3 });
+  useEffect(() => {
+    console.log(inView, entry);
+    entry?.target.classList.toggle("opacity-back", entry.isIntersecting);
+  }, [inView]);
   return (
-    <div className="bio-section py-[14.1rem] flex items-center justify-center flex-wrap ">
+    <div
+      className="bio-section py-[14.1rem] flex items-center justify-center flex-wrap transition-opacity ease-in delay-500 opacity-0"
+      ref={ref}
+    >
       <ImageWrapper alt="avatar" icon={Avatar} tailwindStyles="max-w-[46rem]" />
       <div className="bio-section__content-container mb-[2.4rem]">
         <Badge icon={"🤔"} text="About Me" tailwindStyles="mb-[2.4rem]" />
@@ -32,4 +42,4 @@ function index({ ...props }) {
   );
 }
 
-export default index;
+export default BioSection;
