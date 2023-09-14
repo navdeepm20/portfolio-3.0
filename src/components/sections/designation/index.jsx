@@ -4,8 +4,7 @@ import DesignationCard from "../../cards/designation";
 //data
 import data from "@public/data/data.json";
 //lib
-import { useInView, InView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { InView } from "react-intersection-observer";
 
 function Desgination({ ...props }) {
   return (

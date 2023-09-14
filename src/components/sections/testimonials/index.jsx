@@ -2,7 +2,7 @@
 import Badge from "@components/badges";
 import TestimonialCard from "@components/cards/testimonial";
 
-function index({ ...props }) {
+function TestimonialSection({ ...props }) {
   return (
     <div className="testimonial-section mb-[14rem] ">
       <div className="testimonials-section__top-area flex items-center justify-between mb-[10rem] ">
@@ -31,4 +31,4 @@ function index({ ...props }) {
   );
 }
 
-export default index;
+export default TestimonialSection;
