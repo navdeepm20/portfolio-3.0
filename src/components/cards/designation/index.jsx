@@ -8,7 +8,7 @@ import React from "react";
 const DesignationCard = React.forwardRef(({ data, ...props }, ref) => {
   return (
     <div
-      className="pb-[3rem] pt-[4.2rem] px-[2rem] border rounded-[1.6rem] border-primary-text flex justify-center flex-col items-center w-[24.6rem] translate-x-[-100%] opacity-0 transition-all duration-500"
+      className="pb-[3rem] pt-[4.2rem] px-[2rem] border rounded-[1.6rem] border-primary-text flex justify-center flex-col items-center w-[24.6rem] translate-x-[-100%] cursor-pointer opacity-0 transition-all duration-500"
       ref={ref}
     >
       <ImageWrapper noPointer alt="code icon" icon={CodeIcon} />

@@ -18,6 +18,7 @@ function BioSection({ ...props }) {
     <div
       className="bio-section py-[14.1rem] flex items-center justify-center flex-wrap transition-opacity ease-in delay-500 opacity-0"
       ref={ref}
+      id="bio"
     >
       <ImageWrapper alt="avatar" icon={Avatar} tailwindStyles="max-w-[46rem]" />
       <div className="bio-section__content-container mb-[2.4rem]">

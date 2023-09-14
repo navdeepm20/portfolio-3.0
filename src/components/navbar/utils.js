@@ -1,22 +1,22 @@
 export const NAV_LINKS = [
   {
     label: "Home",
-    url: "/home",
+    url: "#hero",
   },
   {
     label: "About",
-    url: "/about",
+    url: "#bio",
   },
   {
     label: "Work",
-    url: "/work",
+    url: "#portfolio",
   },
   {
     label: "Experience",
-    url: "/home",
+    url: "#carrier",
   },
   {
     label: "Contact",
-    url: "/home",
+    url: "#contact",
   },
 ];

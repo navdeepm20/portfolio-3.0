@@ -9,14 +9,16 @@ import DownloadIcon from "@assets/icons/ArrowLineDown.svg";
 //components
 import Btn from "../../button";
 import Badge from "../../badges";
-//react
-import { useEffect, useState } from "react";
+
 //data
 import data from "@public/data/data.json";
 
 function index({ ...props }) {
   return (
-    <div className="hero-section grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center pb-[19.1rem] gap-y-[2rem]">
+    <div
+      className="hero-section grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center pb-[19.1rem] gap-y-[2rem]"
+      id="hero"
+    >
       <div className="hero-section__personal-info order-2 md:order-1">
         <Badge icon={"👋"} text="Greetings!" tailwindStyles="mb-[2.4rem]" />
         <p className="text-white text-[5.2rem] leading-[6.1rem] font-extrabold mb-[1.6rem]">

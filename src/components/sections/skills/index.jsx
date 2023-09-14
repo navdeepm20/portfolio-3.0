@@ -13,7 +13,7 @@ function SkillsSection({ ...props }) {
   );
 
   return (
-    <div className="skills-section flex flex-col mb-[14rem]">
+    <div className="skills-section flex flex-col mb-[14rem]" id="skills">
       <div className="flex flex-col items-center">
         <Badge
           icon="👨‍💻"
@@ -35,7 +35,7 @@ function SkillsSection({ ...props }) {
                 .map((skill, index) => {
                   return (
                     <InView
-                      threshold={1}
+                      threshold={0.5}
                       onChange={(inView, entry) => {
                         entry.target.classList.toggle(
                           "slide-up",
@@ -71,7 +71,7 @@ function SkillsSection({ ...props }) {
                 .map((skill, index) => {
                   return (
                     <InView
-                      threshold={1}
+                      threshold={0.5}
                       onChange={(inView, entry) => {
                         entry.target.classList.toggle(
                           "slide-up",

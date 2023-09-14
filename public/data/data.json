@@ -89,8 +89,19 @@
 		"show": true,
 		"data": [
 			{
-				"title": "Test Project",
-				"description": "hello world "
+				"title": "Frontend Project",
+				"description": "hello world",
+				"category": "frontend"
+			},
+			{
+				"title": "Backend Project",
+				"description": "hello world",
+				"category": "backend"
+			},
+			{
+				"title": "FullStack Developer",
+				"description": "hello world",
+				"category": "fullstack"
 			}
 		]
 	},
