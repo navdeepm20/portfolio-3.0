@@ -20,7 +20,7 @@ function SkillsSection({ ...props }) {
           text={<CustomBadgeText />}
           tailwindStyles="mb-[2.4rem]"
         />
-        <p className="text-[4.8rem] font-extrabold leading-[5.6rem] mb-[10rem]">
+        <p className="text-[4.2rem] font-extrabold leading-[5.6rem] mb-[10rem]">
           Technology & Skills
         </p>
         <div className="skills-section__skills-container ">

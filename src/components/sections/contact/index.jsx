@@ -19,7 +19,7 @@ function index({ ...props }) {
     <div className="contact-section mb-[20.7rem]" id="contact">
       <div className="contact-section-container mx-auto flex flex-col justify-center items-center flex-wrap">
         <Badge icon={"📬"} text="Contact Us" tailwindStyles="mb-[2.4rem]" />
-        <p className="text-[4.8rem] font-extrabold mb-[6.4rem]">
+        <p className="text-[4.2rem] font-extrabold mb-[6.4rem]">
           Let &apos; s Talk
         </p>
         <div className="contact-section-info-container  flex items-center mb-[6.4rem] gap-x-[5.5rem] flex-wrap gap-y-12 justify-center md:justify-normal">

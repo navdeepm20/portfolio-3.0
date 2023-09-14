@@ -11,7 +11,6 @@ import { useEffect } from "react";
 function BioSection({ ...props }) {
   const { entry, inView, ref } = useInView({ threshold: 0.3 });
   useEffect(() => {
-    console.log(inView, entry);
     entry?.target.classList.toggle("opacity-back", entry.isIntersecting);
   }, [inView]);
   return (
@@ -24,7 +23,7 @@ function BioSection({ ...props }) {
       <div className="bio-section__content-container mb-[2.4rem]">
         <Badge icon={"🤔"} text="About Me" tailwindStyles="mb-[2.4rem]" />
         <div className="bio-section__content-container-content">
-          <p className="text-[4.8rem] font-extrabold mb-[2.4rem]">
+          <p className="text-[4.2rem] font-extrabold mb-[2.4rem]">
             {data?.about?.data?.title}
           </p>
           <p className="text-customGrey text-[1.8rem] leading-[2.5rem]">

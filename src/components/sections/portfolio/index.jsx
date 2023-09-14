@@ -54,8 +54,10 @@ function Index() {
       <div className="portfolio-section__top-area flex items-center justify-between mb-[10rem]">
         <div className="portfolio-section__title-container w-full">
           <Badge text="Portfolio" icon={`🔗`} tailwindStyles="mb-[2.4rem]" />
-          <div className="flex items-center justify-between w-full">
-            <p className="text-[4.8rem] font-extrabold">Works & Projects</p>
+          <div className="flex flex-col  md:flex-row items-center justify-between w-full">
+            <p className="text-[4.2rem] font-extrabold mb-4 md:mb-0">
+              Works & Projects
+            </p>
             <div className="portfolio-section__controls">
               <div className="toggle-container">
                 <input
@@ -87,7 +89,7 @@ function Index() {
           </div>
         </div>
       </div>
-      <div className="portfolio-section__projects grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-[5.6rem] gap-y-[4.8rem] ">
+      <div className="portfolio-section__projects grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-[5.6rem] gap-y-[4.2rem] ">
         {projectsInfo
           .filter((project, index) => activeCategory === project?.category)
           .map((projectInfo, index) => (

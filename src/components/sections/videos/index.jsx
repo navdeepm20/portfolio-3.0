@@ -4,7 +4,7 @@ import VideoCard from "@components/cards/video";
 function index({ ...props }) {
   return (
     <div className="video-container  mb-[14rem] overflow-hidden" id="videos">
-      <p className="video-container__title text-[4.8rem] font-extrabold leading-[5.6rem] mb-[.89rem]">
+      <p className="video-container__title text-[4.2rem] font-extrabold leading-[5.6rem] mb-[.89rem]">
         Latest Videos
       </p>
       <p className="text-customGrey mb-[5.37rem]">
