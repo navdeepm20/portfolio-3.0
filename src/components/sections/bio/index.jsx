@@ -15,7 +15,7 @@ function BioSection({ ...props }) {
   }, [inView]);
   return (
     <div
-      className="bio-section py-[14.1rem] flex items-center justify-center flex-wrap transition-opacity ease-in delay-500 opacity-0"
+      className="bio-section py-[14.1rem] flex items-center justify-center flex-wrap transition-opacity ease-in duration-500 opacity-0"
       ref={ref}
       id="bio"
     >

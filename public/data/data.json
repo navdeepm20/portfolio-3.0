@@ -89,9 +89,35 @@
 		"show": true,
 		"data": [
 			{
-				"title": "Frontend Project",
-				"description": "hello world",
+				"title": "Fast Pannel",
+				"description": "Participated in Dev - Mongo DB hackathon and won the runner up position. It built using Preact & MUI. It brings an admin pannel similar to Django for Fast API",
+				"category": "frontend",
+				"links": []
+			},
+			{
+				"title": "Portfolio 2.0",
+				"description": "My second portfolio website created using ReactJs & MUI.",
 				"category": "frontend"
+			},
+			{
+				"title": "Portfolio 3.0",
+				"description": "My third portfolio website created using NextJs, Tailwind CSS, Emotion. Also Thanks for visiting my Portfolio 3.0",
+				"category": "frontend"
+			},
+			{
+				"title": "BrainWars",
+				"description": "Participated in Appwrite x Hashnode hackathon. Created an online multiplayer game using the NextJs,MUI and Appwrite.",
+				"category": "fullstack"
+			},
+			{
+				"title": "NewsHut",
+				"description": "Created a personalized news website using Django/Django Rest and Postgress, Mastered my core frontend skills like HTML, CSS & JS. No use of any library or framework.",
+				"category": "fullstack"
+			},
+			{
+				"title": "KeepSafe",
+				"description": "Created the personal password and notes locker powered by Django. Used core Html,Css & JS for frontend. Encrypted the user passwords  and notes data in the db",
+				"category": "fullstack"
 			},
 			{
 				"title": "Backend Project",
@@ -99,8 +125,13 @@
 				"category": "backend"
 			},
 			{
-				"title": "FullStack Developer",
-				"description": "hello world",
+				"title": "DFit",
+				"description": "A platform for connecting doctors and patient. Very similar to an EMR. Created using Django, Django Rest Framework, Postgress. Frontend build using core Html, Css and JS. Working on V2 with NextJS.",
+				"category": "fullstack"
+			},
+			{
+				"title": "DFit",
+				"description": "A platform for connecting doctors and patient. Very similar to an EMR. Created using Django, Django Rest Framework, Postgress. Frontend build using core Html, Css and JS. Working on V2 with NextJS for frontend and improvements on the backends",
 				"category": "fullstack"
 			}
 		]

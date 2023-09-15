@@ -5,7 +5,7 @@ import Badge from "@components/badges";
 import ProjectImage from "@assets/portfolio/project-1.svg";
 function index({ title, description, tags, thumbnailUrl, ...props }) {
   return (
-    <div className="p-[3rem] rounded-[1.6rem] border border-primary-bg-light flex flex-col items-center max-w-[36rem]">
+    <div className="p-[3rem] rounded-[1.6rem] border border-primary-bg-light flex flex-col items-center max-w-[36rem] ">
       <div className="mb-[1.6rem] w-full">
         <p className="mb-[0.8rem] font-bold text-[2rem] leading-[2.3rem] text-left">
           {title}

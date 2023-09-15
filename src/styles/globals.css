@@ -129,6 +129,14 @@ body {
   transform: translateY(0);
   opacity: 1;
 }
+.slide-down {
+  transform: translateY(0);
+  opacity: 1;
+}
 .opacity-back {
+  opacity: 1;
+}
+.scale-up {
+  transform: scale(1);
   opacity: 1;
 }

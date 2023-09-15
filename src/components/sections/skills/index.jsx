@@ -46,7 +46,7 @@ function SkillsSection({ ...props }) {
                     >
                       {({ ref }) => (
                         <div
-                          className="skill-image-wrapper opacity-0 translate-x-[100%] delay-300 transition-all"
+                          className="skill-image-wrapper opacity-0 translate-x-[100%] duration-300 transition-all"
                           ref={ref}
                         >
                           <ImageWrapper
@@ -82,7 +82,7 @@ function SkillsSection({ ...props }) {
                     >
                       {({ ref }) => (
                         <div
-                          className="skill-image-wrapper transition-all delay-150 opacity-0 translate-x-[-50%]"
+                          className="skill-image-wrapper transition-all duration-150 opacity-0 translate-x-[-50%]"
                           ref={ref}
                         >
                           <ImageWrapper

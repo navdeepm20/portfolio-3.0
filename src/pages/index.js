@@ -15,8 +15,8 @@ import CarrierSection from "@components/sections/carrier";
 import VideoSection from "@components/sections/videos";
 
 const raleway = Raleway({ subsets: ["latin"] });
-//components
-
+//libs
+import { SnackbarProvider } from "notistack";
 //data
 import data from "@public/data/data.json";
 
@@ -26,6 +26,7 @@ export default function Home() {
       className="px-[3rem] sm:px-[6rem] md:px-[8rem] lg:px-[12rem] xl:px-[14rem] overflow-hidden snap-y main-container"
       style={raleway.style}
     >
+      <SnackbarProvider maxSnack={3} autoHideDuration={30000} />
       {/* nav section */}
 
       <Navbar />

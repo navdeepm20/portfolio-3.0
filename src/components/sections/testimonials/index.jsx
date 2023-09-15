@@ -59,7 +59,7 @@ function TestimonialSection({ ...props }) {
           >
             {({ ref }) => (
               <div
-                className="testimonial-section__wrapper translate-x-[-70%] transition-all delay-300 opacity-0"
+                className="testimonial-section__wrapper translate-x-[-70%] transition-all duration-300 opacity-0"
                 ref={ref}
               >
                 <div

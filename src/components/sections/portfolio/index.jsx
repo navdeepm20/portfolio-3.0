@@ -5,6 +5,8 @@ import PortfolioCard from "@components/cards/portfolio";
 import data from "@public/data/data.json";
 //react
 import { useState } from "react";
+//libs
+import { InView } from "react-intersection-observer";
 function Index() {
   const [projectsInfo, setProjectsInfo] = useState(data?.portfolio?.data || []);
   const [projectCategory, setProjectCategory] = useState({
@@ -89,17 +91,32 @@ function Index() {
           </div>
         </div>
       </div>
-      <div className="portfolio-section__projects grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-[5.6rem] gap-y-[4.2rem] ">
+      <div className="portfolio-section__projects grid grid-cols-1 justify-items-center  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-x-[5.6rem] gap-y-[4.2rem] ">
         {projectsInfo
           .filter((project, index) => activeCategory === project?.category)
           .map((projectInfo, index) => (
-            <PortfolioCard
+            <InView
+              threshold={0.2}
+              onChange={(inView, entry) => {
+                entry.target.classList.toggle("scale-up", entry.isIntersecting);
+              }}
               key={index}
-              title={projectInfo?.title}
-              description={projectInfo?.description}
-              tags={projectInfo?.tags}
-              img={projectInfo?.thumbnailUrl}
-            />
+            >
+              {({ ref }) => (
+                <div
+                  className="portfolio__cards-wrapper scale-50 duration-7 transition-all flex"
+                  ref={ref}
+                >
+                  <PortfolioCard
+                    key={index}
+                    title={projectInfo?.title}
+                    description={projectInfo?.description}
+                    tags={projectInfo?.tags}
+                    img={projectInfo?.thumbnailUrl}
+                  />
+                </div>
+              )}
+            </InView>
           ))}
       </div>
     </div>
