@@ -128,11 +128,6 @@
 				"title": "DFit",
 				"description": "A platform for connecting doctors and patient. Very similar to an EMR. Created using Django, Django Rest Framework, Postgress. Frontend build using core Html, Css and JS. Working on V2 with NextJS.",
 				"category": "fullstack"
-			},
-			{
-				"title": "DFit",
-				"description": "A platform for connecting doctors and patient. Very similar to an EMR. Created using Django, Django Rest Framework, Postgress. Frontend build using core Html, Css and JS. Working on V2 with NextJS for frontend and improvements on the backends",
-				"category": "fullstack"
 			}
 		]
 	},
