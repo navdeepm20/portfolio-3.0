@@ -4,12 +4,12 @@ import Link from "next/link";
 //assets
 import GithubLogo from "@assets/social_media-icons/github.svg";
 import LinkedInLogo from "@assets/social_media-icons/linkedin.svg";
+import DevLogo from "@assets/social_media-icons/dev.svg";
 import Avatar from "@assets/avatar/AvatarAndIcons.svg";
 import DownloadIcon from "@assets/icons/ArrowLineDown.svg";
 //components
 import Btn from "../../button";
 import Badge from "../../badges";
-
 //data
 import data from "@public/data/data.json";
 
@@ -34,6 +34,9 @@ function index({ ...props }) {
           </Link>
           <Link href={`${data?.personal?.data?.linkedInLink}`}>
             <Image src={LinkedInLogo} alt="linkedIn_logo" />
+          </Link>
+          <Link href={`${data?.personal?.data?.devLink}`}>
+            <Image src={DevLogo} alt="linkedIn_logo" width={32} />
           </Link>
         </div>
       </div>
