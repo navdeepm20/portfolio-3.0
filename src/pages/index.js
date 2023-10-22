@@ -13,6 +13,7 @@ import FooterSection from "@components/sections/footer";
 import ContactSection from "@components/sections/contact";
 import CarrierSection from "@components/sections/carrier";
 import VideoSection from "@components/sections/videos";
+import BlogsSection from "@components/sections/blogs";
 
 const raleway = Raleway({ subsets: ["latin"] });
 //libs
@@ -45,6 +46,7 @@ export default function Home() {
 
       {data?.portfolio?.show && <PortfolioSection />}
       {data?.videos?.show && <VideoSection />}
+      {data?.blogs?.show && <BlogsSection />}
       {data?.testimonials?.show && <TestimonialSection />}
       {data?.contact?.show && <ContactSection />}
 

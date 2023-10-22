@@ -1,7 +1,7 @@
 //internal components
 import VideoCard from "@components/cards/video";
 
-function index({ ...props }) {
+function VideosSection({ ...props }) {
   return (
     <div className="video-container  mb-[14rem] overflow-hidden" id="videos">
       <p className="video-container__title text-[4.2rem] font-extrabold leading-[5.6rem] mb-[.89rem]">
@@ -19,4 +19,4 @@ function index({ ...props }) {
   );
 }
 
-export default index;
+export default VideosSection;

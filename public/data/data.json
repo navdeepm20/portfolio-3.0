@@ -141,6 +141,10 @@
 			}
 		]
 	},
+	"blogs": {
+		"show": true,
+		"data": null
+	},
 	"testimonials": {
 		"show": true,
 		"data": [

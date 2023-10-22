@@ -7,11 +7,23 @@ import { forwardRef } from "react";
 
 const ImageWrapper = forwardRef(
   (
-    { icon, alt, styles, tailwindStyles, noPointer, onClick, ...props },
+    {
+      icon,
+      alt,
+      styles,
+      tailwindStyles,
+      noPointer,
+      onClick,
+      width,
+      height,
+      ...props
+    },
     ref
   ) => {
     return (
       <Image
+        width={width}
+        height={height}
         src={icon}
         alt={alt}
         className={tailwindStyles}
