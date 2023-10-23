@@ -3,7 +3,7 @@ import React from "react";
 const DesignationsCard = React.forwardRef(({ data, ...props }, ref) => {
   return (
     <div
-      className="rounded-[1.6rem] flex justify-between py-[2.7rem] px-[2rem] bg-primary-bg-extraLight w-full duration-500 transition-all translate-y-[30%] opacity-0
+      className="rounded-[1.6rem] flex justify-between py-[2.7rem] px-[2rem] bg-primary-bg-extraLight w-full duration-500 transition-all translate-y-[30%] opacity-0 hover:shadow-[0_0_10px_2px] hover:shadow-[rgba(51,48,51,1)]
 	"
       ref={ref}
     >

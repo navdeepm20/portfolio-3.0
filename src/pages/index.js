@@ -21,7 +21,7 @@ import { SnackbarProvider } from "notistack";
 //data
 import data from "@public/data/data.json";
 
-export default function Home() {
+export default function Home({ articles, ...props }) {
   return (
     <main
       className="px-[3rem] sm:px-[6rem] md:px-[8rem] lg:px-[12rem] xl:px-[14rem] overflow-hidden snap-y main-container"
@@ -46,11 +46,24 @@ export default function Home() {
 
       {data?.portfolio?.show && <PortfolioSection />}
       {data?.videos?.show && <VideoSection />}
-      {data?.blogs?.show && <BlogsSection />}
+      {data?.blogs?.show && <BlogsSection articles={articles} />}
       {data?.testimonials?.show && <TestimonialSection />}
       {data?.contact?.show && <ContactSection />}
 
       <FooterSection />
     </main>
   );
+}
+
+export async function getStaticProps() {
+  const response = await fetch(
+    "https://dev.to/api/articles?username=navdeepm20&state=rising"
+  );
+  const articles = await response.json();
+  return {
+    props: {
+      articles,
+      revalidate: 86400, // In seconds
+    },
+  };
 }

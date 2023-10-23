@@ -21,7 +21,7 @@ const CarrierCard = forwardRef(
   ) => {
     return (
       <div
-        className="carrier-card rounded-[1.6rem] border border-primary-bg-light p-[3rem] max-w-[58rem] translate-y-[30%] opacity-0 transition-all duration-500"
+        className="carrier-card rounded-[1.6rem] border border-primary-bg-light p-[3rem] max-w-[58rem] translate-y-[30%] opacity-0 transition-all duration-500 hover:shadow-[0_0_10px_2px] hover:shadow-[rgba(51,48,51,1)] "
         ref={ref}
       >
         <div className="carrier-card__info-container mb-[1.62rem]">

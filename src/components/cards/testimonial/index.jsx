@@ -6,7 +6,7 @@ import PersonImage from "@assets/testimonials/person1.svg";
 function index({ fill, tailwindStyles, ...props }) {
   return (
     <div
-      className={`testimonial-card-container min-w-[35rem] max-w-[50rem] ${
+      className={`testimonial-card-container min-w-[35rem] max-w-[50rem] hover:shadow-[0_0_10px_2px] hover:shadow-[rgba(51,48,51,1)]  transition-shadow ${
         fill ? "" : "border"
       } rounded-[1.6rem] ${
         fill ? "" : "border-primary-bg-light"

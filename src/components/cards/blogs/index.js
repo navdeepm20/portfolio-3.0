@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function BlogCard({ articleData, ...props }) {
   return (
-    <div className="video-card-container px-[2.9rem] py-[3rem] border border-primary-bg-light rounded-[1.6rem] min-w-[30rem] max-w-[40rem] ">
+    <div className="video-card-container px-[2.9rem] py-[3rem] border border-primary-bg-light rounded-[1.6rem] min-w-[30rem] max-w-[40rem] shadow shadow-white cursor-pointer  hover:scale-110 transition-transform hover:border-none ">
       <ImageWrapper
         icon={articleData?.social_image}
         alt="blog_thumbnail"
@@ -15,7 +15,7 @@ function BlogCard({ articleData, ...props }) {
       <div className="blog-detail flex items-center justify-between mt-[2.39rem] gap-x-[3rem]">
         <div className="blog-info ">
           <p
-            className="mb-[1.078rem] font-bold text-[1.8rem] leading-[2.3rem]"
+            className="mb-[1.078rem] font-bold text-[1.8rem] leading-[2.3rem] line-clamp-3"
             title={articleData?.title}
           >
             {articleData?.title}
