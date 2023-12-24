@@ -63,7 +63,7 @@ export async function getStaticProps() {
   return {
     props: {
       articles,
-      revalidate: 86400, // In seconds
+      revalidate: 120, // In seconds
     },
   };
 }

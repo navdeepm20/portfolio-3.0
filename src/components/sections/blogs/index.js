@@ -1,8 +1,6 @@
 //internal components
 import BlogCard from "@components/cards/blogs";
 import Badge from "@/components/badges";
-//swr
-import useSWR from "swr";
 
 function BlogsSection({ articles, ...props }) {
   return (
