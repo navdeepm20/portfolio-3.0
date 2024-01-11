@@ -4,15 +4,18 @@
 		"show": true,
 		"data": {
 			"name": "Navdeep Mishra",
-			"designationPrimary": "FullStack Developer",
-			"designationSecondary": "Tech Enthusiast",
+			"designation": [
+				"Software Engineer",
+				"Blogger",
+				"Tech Enthusiast"
+			],
 			"githubLink": "https://github.com/navdeepm20",
 			"linkedInLink": "https://in.linkedin.com/in/navdeepm20",
 			"devLink": "https://dev.to/navdeepm20"
 		}
 	},
 	"designation": {
-		"show": true,
+		"show": false,
 		"data": [
 			{
 				"title": "FullStack Developer",
@@ -50,8 +53,8 @@
 			"title": "2021 - At the moment",
 			"data": [
 				{
-					"title": "Project Manager & Software Engineer ",
-					"description": "Working as Project Manager and Software Engineer. Building products and making world more better.",
+					"title": "Software Engineer ",
+					"description": "Working as Software Engineer (Frontend) and building scalable products that makes world more better.",
 					"startedOn": "2021-11-15T18:30:00.000Z",
 					"completedOn": null,
 					"isContinue": true
