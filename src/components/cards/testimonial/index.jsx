@@ -3,7 +3,15 @@ import ImageWrapper from "@components/image_wrapper";
 //assets
 import QuotesIcon from "@assets/testimonials/Quotes.svg";
 import PersonImage from "@assets/testimonials/person1.svg";
-function index({ fill, tailwindStyles, ...props }) {
+
+function index({
+  recommendation,
+  name,
+  designation,
+  fill,
+  tailwindStyles,
+  ...props
+}) {
   return (
     <div
       className={`testimonial-card-container min-w-[35rem] max-w-[50rem] hover:shadow-[0_0_10px_2px] hover:shadow-[rgba(51,48,51,1)]  transition-shadow ${
@@ -22,10 +30,7 @@ function index({ fill, tailwindStyles, ...props }) {
 	  "
       >
         <p className="text-[1.6rem] leading-[1.9rem] text-customGrey">
-          O Washington está sempre estudando e aprendendo, buscando aprimorar
-          aquilo que faz. Esse é sua melhor qualidade. Está sempre em busca de
-          seus objetivos, com foco e organização. Além disso, tecnicamente, no
-          que se propõe a fazer, faz bem feito. Sempre!
+          {recommendation}
         </p>
       </div>
       <div className="reviewed-by-container flex items-center">
@@ -34,10 +39,10 @@ function index({ fill, tailwindStyles, ...props }) {
         </div>
         <div className="reviewed-by-info-container">
           <p className="text-[2rem] font-extrabold leading-[2.3rem] mb-[0.47rem]">
-            Romário Lima
+            {name}
           </p>
           <p className="font-bold leading-[1.9rem] text-[1.6rem] text-primary-bg-light">
-            Engenheiro da Computação
+            {designation}
           </p>
         </div>
       </div>

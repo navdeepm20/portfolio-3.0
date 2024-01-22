@@ -76,6 +76,9 @@ function TestimonialSection({ ...props }) {
                             `mr-[3rem] sm:mr-[6rem] md:mr-[12rem] lg:mr-[14rem]`)
                         }`}
                         fill={index % 2 == 0}
+                        designation={testimonialsData?.designation}
+                        recommendation={testimonialsData?.recommendation}
+                        name={testimonialsData?.name}
                         key={index}
                       />
                     );
