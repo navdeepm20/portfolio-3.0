@@ -16,6 +16,7 @@ import PythonIcon from "@assets/skills/python.svg";
 import DbIcon from "@assets/skills/databases.svg";
 import AppwriteIcon from "@assets/skills/appwrite.svg";
 import SassIcon from "@assets/skills/sass.svg";
+import DockerIcon from "@assets/skills/docker.svg";
 
 export const skills = [
   {
@@ -102,5 +103,10 @@ export const skills = [
     name: "Sass",
     img: SassIcon,
     primary: false,
+  },
+  {
+    name: "Docker",
+    img: DockerIcon,
+    primary: true,
   },
 ];

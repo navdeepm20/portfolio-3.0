@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ["mdx", "md", "jsx", "js", "tsx", "ts"],
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["res.cloudinary.com", "media.dev.to"],
   },
   // remotePatterns: [
   //   {

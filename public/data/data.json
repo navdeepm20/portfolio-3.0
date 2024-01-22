@@ -5,7 +5,7 @@
 		"data": {
 			"name": "Navdeep Mishra",
 			"designation": [
-				"Software Engineer",
+				"Software Engineer (Frontend)",
 				"Blogger",
 				"Tech Enthusiast"
 			],
@@ -35,9 +35,9 @@
 			"title": "Navdeep Mishra",
 			"details": {
 				"personal": "Hi, My name is Navdeep Mishra",
-				"work": "For over 2years working with full stack application",
+				"work": "I possess over 2 years of professional experience in frontend technologies.",
 				"study": "Graduated in Bachelor in computer applications",
-				"interested": "Interested in full stack development",
+				"interested": "Interested in Frontend Development | Full stack development | AI/ML",
 				"funFact": "Trying to be a little better than yesterday every day"
 			}
 		}
@@ -53,8 +53,8 @@
 			"title": "2021 - At the moment",
 			"data": [
 				{
-					"title": "Software Engineer ",
-					"description": "Working as Software Engineer (Frontend) and building scalable products that makes world more better.",
+					"title": "Frontend Software Engineer",
+					"description": "Working as Frontend Software Engineer and building web apps end to end using latest frontend technologies.",
 					"startedOn": "2021-11-15T18:30:00.000Z",
 					"completedOn": null,
 					"isContinue": true

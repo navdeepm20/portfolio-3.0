@@ -46,8 +46,9 @@ function SkillsSection({ ...props }) {
                     >
                       {({ ref }) => (
                         <div
-                          className="skill-image-wrapper opacity-0 translate-x-[100%] duration-300 transition-all"
+                          className="grid place-items-center skill-image-wrapper opacity-0 translate-x-[100%] duration-300 transition-all"
                           ref={ref}
+                          title={skill.name}
                         >
                           <ImageWrapper
                             icon={skill.img}
