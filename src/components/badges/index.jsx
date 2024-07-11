@@ -15,7 +15,7 @@ function Badge({
       <span
         className={`text-[2rem] font-bold leading-[2.3rem] text-primary-text pl-1 ${tailwindStylesText}`}
       >
-        {text}
+        {text.length > 5 ? "OK" : "hjalskjdf"}
       </span>
     </div>
   );
