@@ -42,7 +42,8 @@ function index() {
                   >
                     {({ ref }) => (
                       <CarrierCard
-                        title={professionaInfo?.title}
+                        company={professionaInfo?.company}
+                        role={professionaInfo?.role}
                         description={professionaInfo?.description}
                         startedOn={professionaInfo?.startedOn}
                         endedOn={professionaInfo?.completedOn}
@@ -81,7 +82,8 @@ function index() {
                 >
                   {({ ref }) => (
                     <CarrierCard
-                      title={academic?.title}
+                      company={academic?.company}
+                      role={academic?.role}
                       description={academic?.description}
                       startedOn={academic?.startedOn}
                       endedOn={academic?.completedOn}

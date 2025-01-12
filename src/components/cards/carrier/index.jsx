@@ -11,7 +11,8 @@ dayjs.extend(duration);
 const CarrierCard = forwardRef(
   (
     {
-      title,
+      role,
+      company,
       description,
       startedOn,
       endedOn,
@@ -51,17 +52,17 @@ const CarrierCard = forwardRef(
       >
         <div className="carrier-card__info-container mb-[1.62rem]">
           <p className="font-bold text-[2rem] leading-[2.3rem] mb-[.83rem]">
-            {title}
+            {role}
           </p>
+          <p className="font-bold text-[1.6rem] leading-[2.3rem] mb-[.83rem] text-customGrey2">
+            {company}
+          </p>
+
           <p className="text-[1.6rem] leading-[1.9rem]">{description}</p>
         </div>
         <div className="carrier-card__timeline-container flex">
           {!hideTillToday && (
             <span className="mr-auto font-bold text-[1.8rem] leading-[2.1rem] text-primary-bg-light pr-2">
-              {/* {dayjs(endedOn ? new Date(endedOn) : new Date()).from(
-                startedOn,
-                true
-              )} */}
               {getCalculatedDuration()}
             </span>
           )}

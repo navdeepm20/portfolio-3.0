@@ -53,14 +53,24 @@
 			"title": "2021 - At the moment",
 			"data": [
 				{
-					"title": "Frontend Software Engineer",
-					"description": "Working as Frontend Software Engineer and building web apps end to end using latest frontend technologies.",
-					"startedOn": "2021-11-15T18:30:00.000Z",
+					"company": "Evoltech (Lendarch)",
+					"role": "Software Engineer (SDE)",
+					"description": "Working on building a ground breaking software for US Mortgage industry with Lendarch",
+					"startedOn": "2024-02-20T18:30:00.000Z",
 					"completedOn": null,
 					"isContinue": true
 				},
 				{
-					"title": "Associate",
+					"company": "Neurobit",
+					"role": "Software Engineer",
+					"description": "Worked on cutting edge AI health care products. Managed & built products with efficient & timely delivery",
+					"startedOn": "2021-11-15T18:30:00.000Z",
+					"completedOn": "2024-02-20T18:30:00.000Z",
+					"isContinue": true
+				},
+				{
+					"company": "HCL",
+					"role": "Associate",
 					"description": "Worked as associate at HCL Technologies.",
 					"startedOn": "2021-06-29T18:30:00.000Z",
 					"completedOn": "2021-09-02T18:30:00.000Z",
@@ -73,14 +83,16 @@
 			"title": "2021 - At the moment",
 			"data": [
 				{
-					"title": "Bachelor of Computer Applications - (BCA)",
+					"company": "Amrapali Group of Institutes",
+					"role": "Bachelor of Computer Applications",
 					"description": "Completed my graduation from Amrapali Group of Institute. Aff. Kumaun University",
 					"startedOn": "2018-07-01T18:30:00.000Z",
 					"isContinue": false,
 					"completedOn": "2021-11-29T18:30:00.000Z"
 				},
 				{
-					"title": "Sr. Secondary & Secondary Education",
+					"company": "Maharishi Vidhya Mandir",
+					"role": "Sr. Secondary & Secondary Education",
 					"description": "Completed my Sr. Secondary and Secondary schooling from Maharishi Vidya Mandir. Aff. CBSE",
 					"startedOn": "2016-04-01T18:30:00.000Z",
 					"isContinue": false,
